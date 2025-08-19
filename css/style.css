@@ -1,0 +1,1017 @@
+/* Общие стили */
+body {
+   font-family: "Arial", sans-serif;
+   margin: 0;
+   padding: 0;
+   overflow-x: hidden;
+}
+* {
+   box-sizing: border-box;
+}
+.div__links {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.chess-title {
+   font-family: "Kereru";
+   font-size: 50px;
+   margin: 0 auto;
+   text-align: center;
+}
+.link {
+   text-decoration: none;
+   font-size: 30px;
+   padding-top: 20%;
+}
+.link_small-text {
+   font-size: 20px;
+}
+.div3 {
+   background-color: aqua;
+   width: 100%;
+   height: 100vh;
+}
+/* Контейнер для меню и контента */
+.chess-container {
+   display: flex;
+   width: 100%;
+   position: relative;
+   align-content: center;
+   background: linear-gradient(to left, #00bf32, #007c21);
+}
+.chess-post-block {
+   padding: 10px;
+   width: 80%;
+   margin: 0 auto;
+   background-color: #eae9e7;
+}
+.chess-posts__text {
+   font-size: 16px;
+   float: left;
+}
+.title {
+   text-shadow: 6px 5px 5px black;
+   background-color: #9e8954;
+}
+.img__posts {
+   width: 400px;
+   height: 350px;
+   padding: 5px;
+}
+.left {
+   float: left;
+}
+.right {
+   float: right;
+}
+.chess-content__discription {
+   font-size: 20px;
+   border-radius: 25px;
+   text-align: center;
+   opacity: 0.7;
+   padding: 10px;
+}
+.chess-menu__link {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   float: left;
+   margin-bottom: 20px;
+}
+.chess-menu-img {
+   width: 33px;
+   height: 33px;
+}
+.divs {
+   width: 100vw;
+   height: 100vh;
+   background-color: #006600;
+}
+/* Стили для бокового меню */
+.chess-menu {
+   width: 250px;
+   background-color: #f0f0f0;
+   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+   position: fixed;
+   top: 0;
+   left: 0;
+   height: 100vh;
+   z-index: 10; /* Повышаем z-index меню */
+}
+
+.chess-menu-title {
+   color: #004400;
+   text-transform: uppercase;
+   margin-bottom: 20px;
+   font-size: 24px;
+}
+
+/* Уменьшение шрифта меню на 15% */
+.chess-menu-list {
+   list-style: none;
+   margin: 0;
+   font-size: 85%;
+   padding: 0;
+}
+
+.chess-menu-item {
+   width: 100%;
+   position: relative; /* Для абсолютного позиционирования подменю */
+   float: right;
+}
+.container {
+   max-width: 800px;
+   margin: right;
+   background: #fff;
+   padding: 20px;
+   border-radius: 8px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1,
+h2 {
+   color: #2c3e50;
+}
+ul {
+   padding-left: 20px;
+}
+a {
+   color: #0073e6;
+   text-decoration: none;
+}
+a:hover {
+   text-decoration: underline;
+}
+.black {
+   color: black;
+   margin: 0;
+   background-color: white;
+}
+
+.white {
+   color: white;
+   margin: 0;
+   background-color: black;
+}
+.cta {
+   display: block;
+   text-align: center;
+   margin-top: 20px;
+   padding: 10px;
+   background: #0073e6;
+   color: #fff;
+   text-decoration: none;
+   border-radius: 5px;
+}
+.cta:hover {
+   background: #005bb5;
+}
+.chess-menu-item a {
+   text-decoration: none;
+   color: #004400;
+   font-size: 18px;
+   padding: 10px;
+   display: block;
+   transition:
+      background-color 0.3s ease,
+      color 0.3s ease;
+}
+
+/* Стили для подменю */
+.chess-submenu-list {
+   list-style: none;
+   padding-left: 0;
+   display: none;
+   position: absolute;
+   top: 0;
+   left: 100%; /* Выпадение подменю вправо */
+   background-color: #f0f0f0;
+   border-left: 1px solid #cccccc;
+   width: 300px;
+   border: black 2px solid;
+   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+   z-index: 100; /* Подменю имеет более высокий z-index */
+}
+
+.chess-menu-item:hover .chess-submenu-list {
+   display: block; /* Показываем подменю при наведении */
+}
+
+.chess-submenu-item {
+   margin: 0;
+}
+
+.chess-submenu-item a {
+   font-size: 16px;
+   padding: 8px;
+   color: #005500;
+   display: block;
+   /* border-bottom: 1px solid #cccccc; */
+}
+
+.chess-submenu-item:nth-of-type(2n) a:hover {
+   background-color: #9e8954;
+   color: #004400;
+   border: 1px black solid;
+}
+.chess-submenu-item:nth-of-type(2n + 1) a:hover {
+   background-color: #ead6aa;
+   color: #004400;
+   border: 1px black solid;
+}
+.chess-menu-item:nth-of-type(2n):hover {
+   background-color: #9e8954;
+   color: #006600;
+   border: 1px black solid;
+}
+
+.chess-menu-item:nth-of-type(2n + 1):hover {
+   background-color: #ead6aa;
+   color: #006600;
+   border: 1px black solid;
+}
+/*   Стили для контента  */
+.chess-content {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   padding-top: 100px;
+   width: 100%;
+   height: fit-content;
+   box-sizing: border-box;
+}
+.chess__blocks {
+   display: flex;
+   justify-content: space-around;
+   width: 100%;
+}
+.chess__block {
+   position: relative;
+   opacity: 1;
+   background-color: rgb(32, 31, 31);
+   color: white;
+   width: 30%;
+   height: 65vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   border: #003300 5px solid;
+}
+.chess-content-title {
+   margin: 0 auto 25px;
+   padding: 30px;
+   border-radius: 45px;
+   color: #004400;
+   font-size: 25px;
+   background-color: beige;
+   text-align: center;
+   opacity: 0.7;
+}
+.video-ub {
+   margin: 0 auto;
+   text-align: center;
+}
+.chess-content-text {
+   font-size: 28px;
+   line-height: 1.6;
+   color: white;
+   opacity: 0.7;
+   text-align: center;
+}
+.backgroud__none {
+   background: none;
+}
+/* Адаптивные стили */
+@media screen and (max-width: 768px) {
+   .chess-menu {
+      width: 200px;
+   }
+   .club__blocks {
+      flex-direction: column;
+   }
+   .chess-submenu-list {
+      left: 100%;
+      width: 200px;
+   }
+}
+
+@media screen and (max-width: 480px) {
+   .chess-menu {
+      width: 100%;
+      height: auto;
+      position: relative;
+   }
+   .chess-content {
+      margin-left: 0;
+      width: 100%;
+   }
+   .chess-menu-list {
+      white-space: nowrap;
+      display: flex;
+      flex-direction: column;
+   }
+   .chess-menu-item {
+      margin-bottom: 10px;
+      display: inline-block;
+   }
+   .chess-submenu-list {
+      position: relative;
+      left: 0;
+      width: 100%;
+      box-shadow: none;
+   }
+}
+table.chess-table {
+   width: 100%;
+   border-collapse: collapse;
+   margin: 20px 0;
+   font-size: 18px;
+   text-align: left;
+}
+.chess-container-two {
+   padding: 20px;
+   /* background: url("../img/background-video/fon1.jpg") no-repeat center center / cover; */
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+}
+.chess-container-three {
+   display: flex;
+   flex-direction: column;
+   height: 100vh;
+   padding: 20px;
+   background-color: #9affff;
+}
+.chess-table th,
+.chess-table td {
+   padding: 10px;
+   border: 1px solid #ddd;
+}
+
+.chess-table th {
+   background-color: #f4f4f4;
+}
+
+.club-image {
+   width: 100px;
+   height: auto;
+   border-radius: 5px;
+}
+.black__fon {
+   background-color: black;
+   opacity: 0.3;
+}
+.bgvideo {
+   position: fixed;
+   right: 0;
+   bottom: 0;
+   top: 0;
+   left: 0;
+   min-width: 100%;
+   min-height: 100%;
+   width: auto;
+   height: auto;
+   z-index: -9999;
+   opacity: 1;
+}
+.club__blocks {
+   display: flex;
+   justify-content: space-around;
+   width: 100%;
+}
+.social-icons {
+   margin-top: 100px;
+   width: 80%;
+   height: 100px;
+   background-color: yellow;
+   align-self: center;
+}
+.club__block {
+   position: relative;
+   opacity: 0.7;
+   background-color: white;
+   width: 30%;
+   height: 65vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   border: orange 5px black;
+}
+.img__chess {
+   width: 80%;
+   height: 50%;
+   opacity: 2;
+   z-index: 2;
+   border: orange 10px solid;
+   border-radius: 30px;
+}
+/* Общие стили остаются без изменений */
+
+/* Адаптивные стили для небольших экранов */
+@media screen and (max-width: 768px) {
+   .chess-menu {
+      width: 200px;
+   }
+
+   .chess-submenu-list {
+      left: 100%;
+      width: 200px;
+   }
+}
+.menu-toggle {
+   display: none;
+}
+@media screen and (max-width: 505px) {
+   /* Добавляем кнопку-бургер для открытия меню */
+   .menu-toggle {
+      display: block;
+      position: fixed;
+      top: 15px;
+      left: 15px;
+      z-index: 1001;
+      background-color: #004400;
+      color: #fff;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+   }
+
+   /* При активном меню (открытие) */
+   .menu-active .chess-menu {
+      left: 0;
+   }
+
+   .chess-content {
+      width: 100%;
+   }
+
+   .chess-content-title {
+      font-size: 24px;
+   }
+
+   .chess-content-text {
+      font-size: 16px;
+   }
+
+   .chess-menu-list {
+      display: flex;
+      flex-direction: column;
+   }
+
+   .chess-menu-item {
+      margin-bottom: 10px;
+   }
+
+   .chess-submenu-list {
+      position: relative;
+      left: 0;
+      width: 100%;
+      box-shadow: none;
+   }
+
+   /* Фоновое видео можно скрыть или уменьшить его размеры */
+   .bgvideo {
+      display: none; /* Скрываем видео на мобильных устройствах */
+   }
+}
+
+/* Основные стили КОНТАКТЫ*/
+.page-wrapper {
+   font-family: Arial, sans-serif;
+   background-color: #f4f4f4;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+}
+
+.contact-box {
+   background-color: #fff;
+   padding: 20px;
+   border-radius: 8px;
+   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+   max-width: 100%;
+   width: 700px;
+   margin: 20px;
+}
+
+.title-heading {
+   text-align: center;
+   color: #333;
+   font-size: 1.5rem;
+}
+
+.form-layout {
+   display: flex;
+   flex-direction: column;
+}
+
+.input-label {
+   margin-bottom: 5px;
+   color: #333;
+   font-size: 1rem;
+}
+
+.text-field,
+.text-area {
+   padding: 10px;
+   margin-bottom: 15px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   font-size: 1rem;
+}
+
+.text-area {
+   resize: vertical;
+}
+
+.submit-btn {
+   padding: 10px;
+   background-color: #3c9e20;
+   color: white;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+   font-size: 1rem;
+}
+
+.submit-btn:hover {
+   background-color: #29a72f;
+}
+
+.social-icons {
+   text-align: center;
+   margin-top: 20px;
+}
+
+.social-link {
+   margin: 10px;
+   padding: 10px 20px;
+   color: white;
+   text-decoration: none;
+   border-radius: 4px;
+   display: inline-block;
+   font-size: 1rem;
+}
+
+.whatsapp-link {
+   background-color: #25d366;
+}
+
+.telegram-link {
+   background-color: #0088cc;
+}
+
+.whatsapp-link:hover {
+   background-color: #1ebe57;
+}
+
+.telegram-link:hover {
+   background-color: #007bb5;
+}
+
+/* Адаптивность для мобильных устройств */
+@media screen and (max-width: 768px) {
+   .contact-box {
+      width: 100%;
+      margin: 10px;
+      padding: 15px;
+   }
+
+   .title-heading {
+      font-size: 1.25rem;
+   }
+
+   .text-field,
+   .text-area,
+   .submit-btn {
+      font-size: 0.9rem;
+   }
+
+   .social-link {
+      padding: 8px 15px;
+      font-size: 0.9rem;
+   }
+}
+
+@media screen and (max-width: 480px) {
+   .contact-box {
+      padding: 10px;
+   }
+
+   .title-heading {
+      font-size: 1rem;
+   }
+
+   .text-field,
+   .text-area,
+   .submit-btn {
+      font-size: 0.8rem;
+   }
+
+   .social-link {
+      margin: 5px;
+      padding: 6px 10px;
+      font-size: 0.8rem;
+   }
+}
+/*СТИЛИ ДЛЯ СПИСКА СТАТЕЙ POSTS*/
+
+/* Стили для блока статей */
+.posts__block {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   gap: 20px;
+}
+
+/* Стили для отдельных статей */
+.posts__items {
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+}
+
+/* Стили для каждой статьи */
+.post__item {
+   cursor: pointer;
+   border: 1px solid #ddd;
+   padding: 10px;
+   margin-bottom: 15px;
+   transition: transform 0.3s;
+   flex-direction: column;
+   word-break: break-all;
+   width: 32%;
+   box-sizing: border-box;
+   height: 60vh;
+   display: flex;
+
+   background-color: #f9f9f9;
+   border-radius: 10px;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+   overflow: hidden;
+   transition:
+      transform 0.3s ease,
+      box-shadow 0.3s ease;
+   padding: 25px;
+   margin-bottom: 25px;
+}
+@media (max-width: 1200px) {
+   .post__item {
+      width: 48%;
+   }
+}
+@media (max-width: 768px) {
+   .posts__items {
+      flex-direction: column;
+      align-items: center;
+   }
+   .post__item {
+      width: 95%;
+   }
+}
+.post__item:hover {
+   transform: scale(1.02);
+}
+
+/* Стили для модального окна */
+.modal {
+   display: none; /* Скрыто по умолчанию */
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   background-color: rgba(0, 0, 0, 0.8);
+   justify-content: center;
+   align-items: center;
+   z-index: 1000;
+}
+.chess-menu.active {
+   display: block; /* Показываем меню */
+}
+/* Блокируем взаимодействие с замороженным контентом */
+/* Блокируем взаимодействие с замороженным контентом */
+/* Замораживаем остальной контент */
+.freeze {
+   pointer-events: none; /* Отключаем взаимодействие с остальным контентом */
+   opacity: 0.3; /* Делаем замороженный контент полупрозрачным */
+   filter: blur(2px); /* Размытие для замороженного контента */
+}
+
+/* Стили для модального окна */
+.modal {
+   display: none; /* По умолчанию скрыто */
+}
+.modal__title {
+   width: 100%;
+   text-align: center;
+}
+.modal__text {
+   width: 100%;
+}
+.modal__img {
+   width: 100%;
+   height: auto;
+}
+/* Стили для активного состояния модального окна */
+.modal.active {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   overflow-y: auto;
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background-color: rgba(0, 0, 0, 0.8);
+   z-index: 1000;
+   padding: 20px;
+}
+
+.modal-content {
+   background: #fff;
+   max-width: 900px;
+   width: 100%;
+   border-radius: 12px;
+   overflow: hidden;
+   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+   animation: fadeIn 0.3s ease-in-out;
+   display: flex;
+   flex-direction: column;
+}
+
+.close {
+   position: absolute;
+   top: 15px;
+   right: 20px;
+   font-size: 28px;
+   font-weight: bold;
+   color: #fff;
+   cursor: pointer;
+   z-index: 10;
+}
+
+.modal__img {
+   width: 100%;
+   max-height: 400px;
+   object-fit: cover;
+}
+
+.modal-body {
+   padding: 30px;
+   font-family: "Arial", sans-serif;
+   color: #333;
+   text-align: justify;
+}
+
+.modal__title {
+   text-align: center;
+   font-size: 24px;
+   font-weight: bold;
+   margin-bottom: 15px;
+}
+
+.modal__text {
+   font-size: 18px;
+   line-height: 1.7;
+}
+
+.modal-body blockquote {
+   font-style: italic;
+   color: #666;
+   border-left: 4px solid #ccc;
+   padding-left: 15px;
+   margin: 15px 0;
+}
+
+.modal-body ul,
+.modal-body ol {
+   padding-left: 20px;
+}
+
+.modal-body ul li,
+.modal-body ol li {
+   margin-bottom: 8px;
+}
+
+@keyframes fadeIn {
+   from {
+      opacity: 0;
+      transform: translateY(-20px);
+   }
+   to {
+      opacity: 1;
+      transform: translateY(0);
+   }
+}
+
+/* Блокировка прокрутки фона */
+body.modal-open {
+   overflow: hidden;
+}
+
+/*-------------------------------------------------------------*/
+/* Блокируем прокрутку фона */
+body.modal-open {
+   overflow: hidden; /* Блокируем прокрутку фона (остального контента) */
+}
+
+.chess-menu.deactive {
+   display: none; /* Скрываем меню */
+}
+
+.modal-content {
+   z-index: 3;
+   position: relative;
+   background-color: #fff;
+   padding: 20px;
+   max-width: 90%;
+   max-height: 90%;
+   overflow-y: auto;
+}
+
+.modal-img {
+   max-width: 100%;
+   height: auto;
+   margin-bottom: 15px;
+}
+
+#modal-title {
+   font-size: 24px;
+   margin-bottom: 15px;
+}
+
+#modal-text {
+   font-size: 16px;
+}
+
+.close {
+   position: absolute;
+   top: 10px;
+   right: 20px;
+   font-size: 28px;
+   cursor: pointer;
+   color: brown;
+}
+/* Изображение статьи */
+.img__item {
+   max-width: 100%;
+   height: 200px;
+   object-fit: cover;
+   border-bottom: 2px solid #ddd;
+}
+
+/* Заголовок статьи */
+.item__title {
+   font-size: 22px;
+   font-weight: bold;
+   margin: 15px 10px 5px;
+   color: #333;
+   text-align: center;
+}
+
+/* Текст описания статьи */
+.item__text-post {
+   font-size: 16px;
+   color: #666;
+   margin: 0 15px 15px;
+   line-height: 1.6;
+   text-align: justify;
+   overflow: hidden;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+   .posts__items {
+      grid-template-columns: 1fr;
+   }
+
+   .item__title {
+      font-size: 20px;
+   }
+
+   .item__text-post {
+      font-size: 14px;
+   }
+}
+/*Крутая кнопка ссылка*/
+.chess__link {
+   margin-top: 50px;
+   background-color: black;
+   display: block;
+   width: 200px;
+   height: 40px;
+   line-height: 40px;
+   font-size: 18px;
+   font-family: sans-serif;
+   text-decoration: none;
+   color: white;
+   border: 2px solid #333;
+   letter-spacing: 2px;
+   text-align: center;
+   position: relative;
+   transition: all 0.35s;
+}
+
+.chess__link span {
+   position: relative;
+   z-index: 2;
+}
+
+.chess__link:after {
+   position: absolute;
+   content: "";
+   top: 0;
+   left: 0;
+   width: 0;
+   height: 100%;
+   background: white;
+   transition: all 0.45s;
+}
+
+.chess__link:hover {
+   color: black;
+   text-decoration: none;
+}
+
+.chess__link:hover:after {
+   width: 100%;
+}
+@font-face {
+   font-family: "Kereru";
+   src: url("../fonts/Kereru.otf") format("truetype");
+   font-style: normal;
+   font-weight: normal;
+}
+@media (max-width: 950px) {
+   .link {
+      font-size: 20px;
+   }
+}
+@media (max-width: 768px) {
+   .link {
+      font-size: 14px;
+   }
+   .img__services {
+      max-width: 100px;
+      max-height: 100px;
+   }
+}
+@media (max-width: 450px) {
+   .link {
+      font-size: 8px;
+   }
+}
+.modal__text {
+   font-size: 18px;
+   line-height: 1.7;
+   text-align: justify;
+   white-space: normal; /* Позволяет работать с <br> */
+   padding: 15px;
+}
+
+.modal-body p {
+   margin-bottom: 15px;
+}
+.text__block {
+   position: relative;
+   margin-right: 15px;
+   width: 55%;
+   background: #a65900;
+   padding: 25px;
+   padding-top: 100px;
+   border-radius: 25px;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   align-items: center;
+}
+.text__block:hover {
+   border: 1px solid white;
+}
+.chess__text {
+   font-family: "Kereru";
+   font-size: 30px;
+   color: white;
+   margin: 0 auto;
+   text-shadow: 4px 3px 4px black;
+}
+.chess__text_big {
+   font-family: "Kereru";
+   font-size: 16px;
+   color: white;
+   margin: 0 auto;
+}
+.chess__text_m {
+   font-family: "Kereru";
+   font-size: 21px;
+   color: white;
+   margin: 0 auto;
+}

@@ -1,0 +1,2 @@
+<?php
+<html><head><title>РЫбк текст</title><style>body{font-family:Arial, sans-serif;max-width:800px;margin:auto;padding:20px;}h1{color:#333;}img{max-width:100%;height:auto;}p{line-height:1.6;}</style></head><body><h1>РЫбк текст</h1><img src='../uploads/PzcRuqlZxhc.jpg' alt='РЫбк текст'><p>флывфоывл лфы вф щвфы вфлы</p><p><a href='ы'>Читать далее</a></p></body></html>

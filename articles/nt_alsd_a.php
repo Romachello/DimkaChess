@@ -1,0 +1,2 @@
+<?php
+<html><head><title>NT[alsd[a</title><style>body{font-family:Arial, sans-serif;max-width:800px;margin:auto;padding:20px;}h1{color:#333;}img{max-width:100%;height:auto;}p{line-height:1.6;}</style></head><body><h1>NT[alsd[a</h1><img src='../uploads/VAsynh-tQvE.jpg' alt='NT[alsd[a'><p>adsld,[oasdo</p><p><a href='123'>Читать далее</a></p></body></html>
