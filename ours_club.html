@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Шахматный сайт</title>
+   <link rel="stylesheet" href="/css/normalize.css">
+   <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+   <header class="chess-container">
+      <menu class="chess__menu-block">
+         <img class="logo" src="./img/Logo (3).png">
+         <ul class="chess__menu-list">
+            <li class="chess__menu-item"><a class="chess__menu-link" href="./index.html">Главная</li></a>
+            <li class="chess__menu-item"><a class="chess__menu-link" href="./chess-calendar.html">Календарь</li></a>
+            <li class="chess__menu-item"><a class="chess__menu-link" href="./o_nas.html">О нас</a></li>
+            <li class="chess__menu-item"><a class="chess__menu-link" href="./ours_club.html">Наш Клуб</a></li>
+            <li class="chess__menu-item"><a class="chess__menu-link" href="./obuchaushie_kursi.html">Обучающие курсы</br>("В разработке") </li></a>
+         </ul>
+         <div class="chess__social-icon">
+            <a class="vk" href="https://wa.me/+79117970740"><img style="width: 50px;height: 50px; border: 1px solid black;"
+                  src="./img/watssap.jpg"></a>
+            <a class="tg" href="https://t.me/dmitrysharabaev"><img style="width: 50px;height: 50px; border: 1px solid black;"
+                  src="./img/tg.jpg"></a>
+         </div>
+         <!-- <button class="trigger-btn">Записаться на "Пробный урок"</button> -->
+      </menu>
+      <div class="burger" id="burger">
+         <span></span>
+         <span></span>
+         <span></span>
+      </div>
+
+      <!-- Модальное меню -->
+      <div class="menu-overlay" id="menu">
+         <a href="#" class="menu-item">Календарь</a>
+         <a href="#" class="menu-item">О нас</a>
+         <a href="#" class="menu-item">Шахматные турниры клуба</a>
+         <a href="#" class="menu-item">Отзывы</a>
+         <a href="#" class="menu-item">Мы в социальных сетях</a>
+         <button class="trigger-btn chess__button chess__button_big" href="">Записаться на "Пробный
+            урок"</button>
+      </div>
+
+
+
+      <div class="overlay" id="modal">
+         <div class="popup">
+            <button class="close-action" id="closeModal">✕</button>
+            <h2>Запись на занятие шахматного клуба</h2>
+
+            <form id="signupForm">
+               <div class="form-block">
+                  <label class="form-label" for="parentName">ФИО Родителя</label>
+                  <input class="form-input" type="text" id="parentName" required>
+               </div>
+
+               <div class="form-block">
+                  <label class="form-label" for="childName">ФИО Ребенка</label>
+                  <input class="form-input" type="text" id="childName" required>
+               </div>
+
+               <div class="form-block">
+                  <label class="form-label" for="phone">Контактный телефон</label>
+                  <input class="form-input" type="tel" id="phone" required placeholder="+7 (___) ___-__-__">
+               </div>
+
+               <div class="form-block">
+                  <label class="form-label" for="goal">Цель занятий</label>
+                  <textarea class="form-textarea" id="goal" rows="3"></textarea>
+               </div>
+
+               <div class="form-block">
+                  <label class="form-label" for="level">Уровень подготовки</label>
+                  <select class="form-select" id="level">
+                     <option value="beginner">Начальный</option>
+                     <option value="intermediate">Средний</option>
+                     <option value="advanced">Продвинутый</option>
+                  </select>
+               </div>
+
+               <div class="form-block">
+                  <label class="form-label" for="city">Город и район проживания</label>
+                  <input class="form-input" type="text" id="city">
+               </div>
+
+               <div class="form-block">
+                  <label class="form-label">Предпочтительная форма занятий</label>
+                  <div class="options">
+                     <label><input type="radio" name="mode" value="offline"> Очно</label>
+                     <label><input type="radio" name="mode" value="online"> Заочно</label>
+                  </div>
+               </div>
+
+               <div class="form-block">
+                  <label class="form-label">Формат занятий</label>
+                  <div class="options">
+                     <label><input type="radio" name="groupType" value="group"> Групповые</label>
+                     <label><input type="radio" name="groupType" value="individual"> Индивидуальные</label>
+                  </div>
+               </div>
+
+               <button type="submit" class="submit-action">Отправить заявку</button>
+            </form>
+         </div>
+      </div>
+   </header>
+   <section class="chess-container-two" id="O-Nas">
+      <div class="comments-section">
+         <h2 class="title">Отзывы родителей об обучении в школе</h2>
+
+         <div class="comment">
+            <div class="avatar" style="background-image: url('https://i.pravatar.cc/80?img=5');"></div>
+            <div class="comment-content">
+               <div class="comment-header">
+                  <span class="author">Андрей Петров</span>
+                  <span class="date">14 августа 2025</span>
+               </div>
+               <div class="text">Отличный турнир! Особенно понравилась партия между Ивановым и Смирновым — настоящий
+                  шедевр позиционной игры.</div>
+            </div>
+         </div>
+
+         <div class="comment reverse">
+            <div class="avatar" style="background-image: url('https://i.pravatar.cc/80?img=8');"></div>
+            <div class="comment-content">
+               <div class="comment-header">
+                  <span class="author">Мария Коваль</span>
+                  <span class="date">13 августа 2025</span>
+               </div>
+               <div class="text">Спасибо организаторам! Атмосфера была дружелюбной, а шахматный блиц на открытом воздухе
+                  — просто супер.</div>
+            </div>
+         </div>
+
+         <div class="comment">
+            <div class="avatar" style="background-image: url('https://i.pravatar.cc/80?img=12');"></div>
+            <div class="comment-content">
+               <div class="comment-header">
+                  <span class="author">Сергей Иванов</span>
+                  <span class="date">12 августа 2025</span>
+               </div>
+               <div class="text">Хотелось бы побольше мастер-классов для новичков. В остальном всё замечательно!</div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="chess__turnament">
+      <a id="chess-calendar"></a>
+      <div class="chess-wrap">
+         <h1 class="chess-title">Шахматные турниры клуба</h1>
+         <p class="chess-sub">для детей и взрослых</p>
+
+         <div id="chess-cards" class="chess-grid"></div>
+
+         <nav id="chess-pager" class="chess-pagination" aria-label="Навигация по страницам"></nav>
+      </div>
+   </section>
+   <script src="./js/turnamets.js"></script>
+   <script src="./js/modal__posts.js"></script>
+   <script>
+      // ----- НАСТРОЙКИ -----
+      const chessPerPage = 3;
+      const chessCardsEl = document.getElementById('chess-cards');
+      const chessPagerEl = document.getElementById('chess-pager');
+      const chessTotalPages = Math.max(1, Math.ceil(chessTournaments.length / chessPerPage));
+      let chessPage = 1;
+
+      // ----- РЕНДЕР КАРТОЧЕК -----
+      function chessRenderCards(p) {
+         const start = (p - 1) * chessPerPage;
+         const slice = chessTournaments.slice(start, start + chessPerPage);
+         chessCardsEl.innerHTML = slice.map(t => `
+      <div class="chess-card">
+        <div class="chess-card-title">${t.title}</div>
+        <div class="chess-card-row">📅 ${t.date}</div>
+        <div class="chess-card-row">📍 ${t.place}</div>
+        <div class="chess-card-row">🏆 ${t.level}</div>
+        <a class="chess-btn" href="#">Подробнее</a>
+      </div>
+    `).join('');
+      }
+
+      // ----- РЕНДЕР ПАГИНАЦИИ -----
+      function chessRenderPager(p) {
+         const prevDisabled = p <= 1 ? 'chess-disabled' : '';
+         const nextDisabled = p >= chessTotalPages ? 'chess-disabled' : '';
+         let html = `<span class="chess-pagination-dash">—</span>
+      <span class="chess-arrow ${prevDisabled}" data-go="${p - 1}">«</span>`;
+         for (let i = 1; i <= chessTotalPages; i++) {
+            html += `<span class="chess-page" data-go="${i}" ${i === p ? 'aria-current="page"' : ''}>${i}</span>`;
+         }
+         html += `<span class="chess-arrow ${nextDisabled}" data-go="${p + 1}">»</span>
+      <span class="chess-pagination-dash">—</span>`;
+         chessPagerEl.innerHTML = html;
+      }
+
+      // ----- ПЕРЕКЛЮЧЕНИЕ -----
+      function chessGo(to) {
+         chessPage = Math.min(Math.max(1, to), chessTotalPages);
+         chessRenderCards(chessPage);
+         chessRenderPager(chessPage);
+         document.getElementById('chess-calendar').scrollIntoView({
+            behavior: 'smooth'
+         });
+      }
+      chessPagerEl.addEventListener('click', e => {
+         const el = e.target.closest('[data-go]');
+         if (!el) return;
+         chessGo(parseInt(el.dataset.go, 10));
+      });
+      chessGo(1);
+   </script>
+</body>
+
+</html>
