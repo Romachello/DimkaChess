@@ -15,7 +15,7 @@
          <img class="logo" src="./img/Logo (3).png">
          <ul class="chess__menu-list">
             <li class="chess__menu-item"><a class="chess__menu-link" href="./index.html">Главная</li></a>
-            <li class="chess__menu-item"><a class="chess__menu-link" href="./chess-calendar.html">Календарь</li></a>
+            <li class="chess__menu-item"><a class="chess__menu-link" href="./chess-calendar.html">Календарь городских турниров</li></a>
             <li class="chess__menu-item"><a class="chess__menu-link" href="./o_nas.html">О нас</a></li>
             <li class="chess__menu-item"><a class="chess__menu-link" href="./ours_club.html">Наш Клуб</a></li>
             <li class="chess__menu-item"><a class="chess__menu-link" href="./obuchaushie_kursi.html">Обучающие курсы</br>("В разработке") </li></a>
@@ -36,7 +36,7 @@
 
       <!-- Модальное меню -->
       <div class="menu-overlay" id="menu">
-         <a href="#" class="menu-item">Календарь</a>
+         <a href="#" class="menu-item">Календарь городских турниров</a>
          <a href="#" class="menu-item">О нас</a>
          <a href="#" class="menu-item">Шахматные турниры клуба</a>
          <a href="#" class="menu-item">Отзывы</a>
@@ -108,6 +108,17 @@
          </div>
       </div>
    </header>
+   <section class="chess__turnament">
+      <a id="chess-calendar"></a>
+      <div class="chess-wrap">
+         <h1 class="chess-title">Шахматные турниры клуба</h1>
+         <p class="chess-sub">для детей и взрослых</p>
+
+         <div id="chess-cards" class="chess-grid"></div>
+
+         <nav id="chess-pager" class="chess-pagination" aria-label="Навигация по страницам"></nav>
+      </div>
+   </section>
    <section class="chess-container-two" id="O-Nas">
       <div class="comments-section">
          <h2 class="title">Отзывы родителей об обучении в школе</h2>
@@ -149,17 +160,7 @@
       </div>
    </section>
 
-   <section class="chess__turnament">
-      <a id="chess-calendar"></a>
-      <div class="chess-wrap">
-         <h1 class="chess-title">Шахматные турниры клуба</h1>
-         <p class="chess-sub">для детей и взрослых</p>
-
-         <div id="chess-cards" class="chess-grid"></div>
-
-         <nav id="chess-pager" class="chess-pagination" aria-label="Навигация по страницам"></nav>
-      </div>
-   </section>
+   
    <script src="./js/turnamets.js"></script>
    <script src="./js/modal__posts.js"></script>
    <script>
