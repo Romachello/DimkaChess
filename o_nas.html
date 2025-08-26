@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Шахматный сайт</title>
+   <link rel="stylesheet" href="/css/normalize.css">
+   <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+   <header class="chess-container">
+      <menu class="chess__menu-block">
+         <img class="logo" src="./img/Logo (3).png">
+         <ul class="chess__menu-list">
+            <li class="chess__menu-item"><a class="chess__menu-link" href="./index.html">Главная</li></a>
+            <li class="chess__menu-item"><a class="chess__menu-link" href="./chess-calendar.html">Календарь городских
+                  турниров</li></a>
+            <li class="chess__menu-item"><a class="chess__menu-link" href="./o_nas.html">О нас</a></li>
+            <li class="chess__menu-item"><a class="chess__menu-link" href="./ours_club.html">Наш Клуб</a></li>
+            <li class="chess__menu-item"><a class="chess__menu-link" href="./obuchaushie_kursi.html">Обучающие
+                  курсы</br>("В разработке") </li></a>
+         </ul>
+         <div class="chess__social-icon">
+            <a class="vk" href="https://wa.me/+79117970740"><img
+                  style="width: 50px;height: 50px; border: 1px solid black;" src="./img/watssap.jpg"></a>
+            <a class="tg" href="https://t.me/dmitrysharabaev"><img
+                  style="width: 50px;height: 50px; border: 1px solid black;" src="./img/tg.jpg"></a>
+         </div>
+         <!-- <button class="trigger-btn">Записаться на "Пробный урок"</button> -->
+      </menu>
+      <div class="burger" id="burger">
+         <span></span>
+         <span></span>
+         <span></span>
+      </div>
+
+      <!-- Модальное меню -->
+      <div class="menu-overlay" id="menu">
+         <a href="#" class="menu-item">Календарь городских турниров</a>
+         <a href="#" class="menu-item">О нас</a>
+         <a href="#" class="menu-item">Шахматные турниры клуба</a>
+         <a href="#" class="menu-item">Отзывы</a>
+         <a href="#" class="menu-item">Мы в социальных сетях</a>
+         <button class="trigger-btn chess__button chess__button_big" href="">Записаться на "Пробный
+            урок"</button>
+      </div>
+
+
+
+
+      <div class="overlay" id="modal">
+         <div class="popup">
+            <button class="close-action" id="closeModal">✕</button>
+            <h2>Запись на занятие шахматного клуба</h2>
+
+            <form id="signupForm">
+               <div class="form-block">
+                  <label class="form-label" for="parentName">ФИО Родителя</label>
+                  <input class="form-input" type="text" id="parentName" required>
+               </div>
+
+               <div class="form-block">
+                  <label class="form-label" for="childName">ФИО Ребенка</label>
+                  <input class="form-input" type="text" id="childName" required>
+               </div>
+
+               <div class="form-block">
+                  <label class="form-label" for="phone">Контактный телефон</label>
+                  <input class="form-input" type="tel" id="phone" required placeholder="+7 (___) ___-__-__">
+               </div>
+
+               <div class="form-block">
+                  <label class="form-label" for="goal">Цель занятий</label>
+                  <textarea class="form-textarea" id="goal" rows="3"></textarea>
+               </div>
+
+               <div class="form-block">
+                  <label class="form-label" for="level">Уровень подготовки</label>
+                  <select class="form-select" id="level">
+                     <option value="beginner">Начальный</option>
+                     <option value="intermediate">Средний</option>
+                     <option value="advanced">Продвинутый</option>
+                  </select>
+               </div>
+
+               <div class="form-block">
+                  <label class="form-label" for="city">Город и район проживания</label>
+                  <input class="form-input" type="text" id="city">
+               </div>
+
+               <div class="form-block">
+                  <label class="form-label">Предпочтительная форма занятий</label>
+                  <div class="options">
+                     <label><input type="radio" name="mode" value="offline"> Очно</label>
+                     <label><input type="radio" name="mode" value="online"> Заочно</label>
+                  </div>
+               </div>
+
+               <div class="form-block">
+                  <label class="form-label">Формат занятий</label>
+                  <div class="options">
+                     <label><input type="radio" name="groupType" value="group"> Групповые</label>
+                     <label><input type="radio" name="groupType" value="individual"> Индивидуальные</label>
+                  </div>
+               </div>
+
+               <button type="submit" class="submit-action">Отправить заявку</button>
+            </form>
+         </div>
+      </div>
+   </header>
+   <section class="o__nas">
+      <h1>О нас</h1>
+      <p>
+         Мы – команда шахматных друзей: тренеров, игроков, судей, организаторов и просто любителей вечной игры.
+         Мы объединились для того, чтобы:
+         - делиться своими знаниями, умениями, опытом с учениками
+         - организовывать атмосферные турниры
+         - проводить различные шахматные встречи (сеансы одновременной игры с именитыми шахматистами, мастер-классы,
+         социально-значимые и корпоративные шахматные праздники)
+      </p>
+   </section>

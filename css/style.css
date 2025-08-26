@@ -1135,7 +1135,21 @@ body.modal-open {
       margin-top: 10px;
    }
 }
-
+.o__nas {
+   width: 80%;
+   margin: 0 auto;
+   justify-content: space-around;
+   display: flex;
+   flex-direction: column;
+   background: white;
+   border-radius: 20px;
+   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+   padding: 20px;
+   text-align: center;
+   transition:
+      transform 0.3s ease,
+      box-shadow 0.3s ease;
+}
 .chess__menu-block {
    margin: 0 auto;
    opacity: 0.9;
